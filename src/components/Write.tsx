@@ -43,6 +43,7 @@ const Write: React.FC = () => {
   
   useEffect(()=>{
     localStorage.setItem("item", JSON.stringify(stData))
+    dataGet();
   },[stData])
 
   return (
